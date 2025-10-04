@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import heroBg from "@/assets/hero-bg.png";
 const Hero = () => {
   useEffect(() => {
     // Load UnicornStudio script
@@ -13,8 +14,15 @@ const Hero = () => {
     };
   }, []);
   return <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-      {/* Background gradient overlay */}
-      <div className="absolute inset-0 gradient-hero opacity-20"></div>
+      {/* Background image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={heroBg} 
+          alt="Hero background" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-background/40"></div>
+      </div>
       
       <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center relative z-10">
         {/* Text Content */}

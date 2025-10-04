@@ -58,7 +58,14 @@ const Projects = () => {
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag, tagIndex) => {})}
+                  {project.tags.map((tag, tagIndex) => (
+                    <span 
+                      key={tagIndex} 
+                      className="px-3 py-1 text-sm bg-primary/10 text-primary-glow rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>)}
