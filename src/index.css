@@ -113,3 +113,8 @@ All colors MUST be HSL.
     box-shadow: var(--shadow-card);
   }
 }
+
+/* Hide UnicornStudio badge */
+a[href*="unicorn.studio"] {
+  display: none !important;
+}
