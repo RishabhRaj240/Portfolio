@@ -14,9 +14,9 @@ const Hero = () => {
   }, []);
   return <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
       {/* UnicornStudio Background Animation */}
-      <div className="absolute inset-0 z-0">
-        <div data-us-project="gW5NkoqyuFAnupBPtVxt" className="w-full h-full"></div>
-        <div className="absolute inset-0 bg-background/50"></div>
+      <div className="absolute inset-0 z-0 flex items-center justify-center">
+        <div data-us-project="gW5NkoqyuFAnupBPtVxt" style={{width: "1440px", height: "900px"}} className="w-full h-full"></div>
+        <div className="absolute inset-0 bg-background/40"></div>
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
