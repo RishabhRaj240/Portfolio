@@ -15,7 +15,10 @@ const Hero = () => {
   return <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
       {/* UnicornStudio Background Animation */}
       <div className="absolute inset-0 z-0 flex items-center justify-center">
-        <div data-us-project="gW5NkoqyuFAnupBPtVxt" style={{width: "1440px", height: "900px"}} className="w-full h-full"></div>
+        <div data-us-project="gW5NkoqyuFAnupBPtVxt" style={{
+        width: "1440px",
+        height: "900px"
+      }} className="w-full h-full"></div>
         <div className="absolute inset-0 bg-background/40"></div>
       </div>
       
@@ -32,7 +35,7 @@ const Hero = () => {
             
           </h1>
           
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl max-w-2xl mx-auto text-purple-500">
             I craft beautiful, functional digital experiences that make an impact. 
             Specializing in modern web technologies and user-centered design.
           </p>
