@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroBg from "@/assets/hero-bg.png";
 const Hero = () => {
   useEffect(() => {
     // Load UnicornStudio script
@@ -14,19 +13,15 @@ const Hero = () => {
     };
   }, []);
   return <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-      {/* Background image */}
+      {/* UnicornStudio Background Animation */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroBg} 
-          alt="Hero background" 
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-background/40"></div>
+        <div data-us-project="gW5NkoqyuFAnupBPtVxt" className="w-full h-full"></div>
+        <div className="absolute inset-0 bg-background/50"></div>
       </div>
       
-      <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center relative z-10">
-        {/* Text Content */}
-        <div className="space-y-6 animate-slide-up">
+      <div className="container mx-auto px-4 relative z-10">
+        {/* Text Content - Centered */}
+        <div className="max-w-4xl mx-auto text-center space-y-6 animate-slide-up">
           <div className="inline-block glass px-4 py-2 rounded-full text-sm text-primary-glow">
             Welcome to my portfolio
           </div>
@@ -37,12 +32,12 @@ const Hero = () => {
             
           </h1>
           
-          <p className="text-xl text-muted-foreground max-w-lg">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             I craft beautiful, functional digital experiences that make an impact. 
             Specializing in modern web technologies and user-centered design.
           </p>
           
-          <div className="flex gap-4 pt-4">
+          <div className="flex gap-4 pt-4 justify-center">
             <Button size="lg" className="gradient-accent text-primary-foreground hover:opacity-90 transition-opacity" asChild>
               <a href="#projects">View My Work</a>
             </Button>
@@ -50,11 +45,6 @@ const Hero = () => {
               <a href="#contact">Get In Touch</a>
             </Button>
           </div>
-        </div>
-
-        {/* UnicornStudio Animation */}
-        <div className="flex justify-center items-center animate-fade-in">
-          <div data-us-project="gW5NkoqyuFAnupBPtVxt" className="w-full max-w-[390px] h-[500px] rounded-2xl overflow-hidden glass card-shadow"></div>
         </div>
       </div>
 
