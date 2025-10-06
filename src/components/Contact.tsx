@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 // Custom X icon component
@@ -35,9 +35,9 @@ const Contact = () => {
       label: "X",
     },
     {
-      icon: <Mail />,
-      href: "https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqTgCdMsWzsFPqJkqZXnkTztJjGFgMfFHVctSHmDNLHfrVhlWSDBnSdFvVnrbJjTMzxZFg",
-      label: "Email",
+      icon: <Instagram />,
+      href: "https://instagram.com/rishabh_0424",
+      label: "Instagram",
     },
   ];
   return (
